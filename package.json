@@ -6,10 +6,17 @@
   "repository": "git@github.com:thelegendofcode/btw.git",
   "author": "Sen <sen@legendofcode.com>",
   "license": "MIT",
+  "scripts": {
+    "build": "babel --presets @babel/preset-typescript src/index.ts",
+    "typecheck": "tsc"
+  },
   "dependencies": {
     "typescript": "^3.9.5"
   },
-  "scripts": {
-    "build": "tsc"
+  "devDependencies": {
+    "@babel/cli": "^7.10.1",
+    "@babel/core": "^7.10.2",
+    "@babel/preset-env": "^7.10.2",
+    "@babel/preset-typescript": "^7.10.1"
   }
 }
