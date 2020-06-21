@@ -7,16 +7,24 @@
   "author": "Sen <sen@legendofcode.com>",
   "license": "MIT",
   "scripts": {
-    "build": "babel --presets @babel/preset-typescript src/index.ts",
+    "build": "webpack",
+    "build-babel": "babel --presets @babel/preset-typescript src/index.ts",
     "typecheck": "tsc"
   },
-  "dependencies": {
-    "typescript": "^3.9.5"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@babel/cli": "^7.10.1",
     "@babel/core": "^7.10.2",
     "@babel/preset-env": "^7.10.2",
-    "@babel/preset-typescript": "^7.10.1"
+    "@babel/preset-typescript": "^7.10.1",
+    "@types/node": "^14.0.13",
+    "@types/webpack": "^4.41.17",
+    "@types/webpack-dev-server": "^3.11.0",
+    "babel-loader": "^8.1.0",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.5",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
   }
 }
